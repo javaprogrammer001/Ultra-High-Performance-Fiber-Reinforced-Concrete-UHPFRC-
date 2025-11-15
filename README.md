@@ -1,138 +1,73 @@
-📘 Dataset Description – Ultra-High-Performance Fiber-Reinforced Concrete (UHPFRC)
+# 🧠 EPTANN — Enhanced Phase Time Adaptive Neural Network  
+A time-adaptive neural architecture designed for dynamic signal modeling, temporal prediction, and interpretable feature learning.
 
-This dataset documents the experimental study titled:
+---
 
-“Investigation on the Volume of Steel Fibers in the Behavior of Ultra-High-Performance Fiber-Reinforced Concrete (UHPFRC) Using Sustainable Materials.”
+## 📌 Overview  
+The **Enhanced Phase Time Adaptive Neural Network (EPTANN)** is built to process **time-varying, sequential, or dynamic signals**.  
+It adapts its internal parameters based on temporal context, providing both **accuracy** and **interpretability**.
 
-The dataset focuses on how varying steel fiber volumes influence the mechanical, durability, and microstructural behavior of UHPFRC prepared using sustainable materials.
+---
 
-📦 1. Dataset Overview
+## 🏗️ Architecture Structure  
 
-This dataset includes:
+### ### 1️⃣ Input Layer  
+- Accepts sequential or time-series feature vectors  
+- Supports variable sequence lengths  
 
-UHPFRC mix proportion details
+---
 
-Mechanical strength test results
+### 2️⃣ Time-Adaptive Encoding Block  
+Components:  
+- Temporal Convolution Layer  
+- Phase-Shift Learning Module  
+- Gated Activation Unit (GAU)
 
-Durability performance results
+Key Features:  
+- Learns fine-grained temporal transitions  
+- Dynamically adapts to changing patterns  
 
-SEM and EDX microstructural analysis
+---
 
-Steel fiber volume variations (0% to ~3%)
+### 3️⃣ Multi-Scale Feature Extraction Block  
+Contains:  
+- Dilated CNNs  
+- Residual Skip Connections  
+- Temporal Multi-Scale Kernels  
 
-🧱 2. Materials & Mix Information
+Purpose:  
+- Captures short-term + long-term dependencies  
 
-(Note: Numerical mix table intentionally excluded as per requirement)
+---
 
-Binders & Additives
+### 4️⃣ Time-Adaptive Normalization  
+- Normalization parameters vary at each time-step  
+- Improves convergence and stabilizes training  
 
-Ordinary Portland Cement (OPC 53 grade)
+---
 
-Silica fume
+### 5️⃣ Dense Reconstruction Block  
+- Several fully connected layers  
+- Final prediction or reconstruction output  
 
-Alccofine-1203
+---
 
-GGBFS (Ground Granulated Blast Furnace Slag)
+## ⚡ Activation Functions  
+- **ReLU** → feature extraction  
+- **Tanh** → gating mechanisms  
+- **Sigmoid** → adaptive control modules  
 
-Fly ash
+---
 
-Aggregates
+## 🎯 Key Advantages  
+- Learns **dynamic temporal patterns**  
+- Produces **interpretability outputs** such as:  
+  - Temporal attention heatmaps  
+  - Phase-shift visualization  
+  - Adaptive weight evolution plots  
+- Robust for non-stationary signals  
 
-River sand
+---
 
-Quartz sand
+## 📊 Block Diagram (ASCII Representation)
 
-Chemical Admixture
-
-Polycarboxylate-based superplasticizer
-
-Steel Fibers
-
-Hooked-end steel fibers
-
-Tested at multiple volume fractions (0% – 3%)
-
-🧪 3. Mechanical Properties Dataset
-Compressive Strength
-
-Specimen: 50 × 50 × 50 mm cube
-
-Split Tensile Strength
-
-Specimen: 75 × 150 mm cylinder
-
-Flexural Strength
-
-Specimen: 40 × 40 × 160 mm prism
-
-Dataset Contains
-
-Raw readings
-
-Average values
-
-Influence of increasing steel fiber volume on strength
-
-🛡️ 4. Durability Properties Dataset
-Abrasion Resistance Test
-
-Specimen: 20 mm thick × 50 mm breadth × 50 mm diameter
-
-Rapid Chloride Permeability Test (RCPT)
-
-Specimen: 100 × 50 mm
-
-Water Absorption Test
-
-(Saturated condition)
-
-Porosity Test
-
-Specimen: 75 × 150 mm
-
-Alkalinity Test
-
-Conducted on powdered UHPFRC samples
-
-Dataset Contains
-
-Abrasion mass loss
-
-RCPT charge passed
-
-Water absorption (%)
-
-Porosity values
-
-pH / alkalinity results
-
-🔬 5. Microstructural Analysis Dataset
-Scanning Electron Microscope (SEM)
-
-Fiber distribution
-
-Matrix densification
-
-Micro-crack patterns
-
-Energy Dispersive X-Ray (EDX/EDAX)
-
-Elemental composition
-
-Hydration product identification
-
-Interface behavior around fibers
-
-📥 6. Use Cases of This Dataset
-
-This dataset can be used for:
-
-Studying steel fiber effects on UHPC strength & durability
-
-Building AI/ML prediction models
-
-Linking microstructural features to mechanical performance
-
-Benchmarking sustainable high-performance concrete mixes
-
-Reproducing experiments for validation
