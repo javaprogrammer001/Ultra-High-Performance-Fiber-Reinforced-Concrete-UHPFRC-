@@ -1,73 +1,121 @@
-# 🧠 EPTANN — Enhanced Phase Time Adaptive Neural Network  
-A time-adaptive neural architecture designed for dynamic signal modeling, temporal prediction, and interpretable feature learning.
+# 📘 Dataset Description – UHPRC Steel Fiber Volume Study
+
+This repository contains the dataset used for the research project:
+
+**“Investigation on the Volume of Steel Fibers in the Behavior of Ultra-High-Performance Fiber-Reinforced Concrete (UHPFRC) Using Sustainable Materials.”**
+
+The dataset documents two UHPFRC mixes (**UHPFRC-AF** and **UHPFRC-GG**), along with their mechanical, durability, and microstructural performance at different steel-fiber volume percentages.
 
 ---
 
-## 📌 Overview  
-The **Enhanced Phase Time Adaptive Neural Network (EPTANN)** is built to process **time-varying, sequential, or dynamic signals**.  
-It adapts its internal parameters based on temporal context, providing both **accuracy** and **interpretability**.
+## 📦 1. Mix Proportion Data (UHPFRC-AF & UHPFRC-GG)
+
+This section contains material proportions (kg/m³) for two UHPFRC mixes created using sustainable binder materials.
+
+### **Materials Included**
+- Ordinary Portland Cement (OPC 53 grade)  
+- Silica fume  
+- Alccofine 1203  
+- Ground Granulated Blast Furnace Slag (GGBFS)  
+- Fly ash (Class F)  
+- River sand  
+- Quartz sand  
+- Polycarboxylate-based superplasticizer  
+- Steel fibers (volume fraction variable)
+
+### **Dataset Contains**
+- Complete weight-based mix proportions  
+- Comparison between UHPFRC-AF and UHPFRC-GG  
+- Steel fiber volume variations:  
+  **0%, 0.5%, 1%, 1.5%, 2%, 2.5%, 3%**
 
 ---
 
-## 🏗️ Architecture Structure  
+## 🧪 2. Mechanical Properties Dataset
 
-### ### 1️⃣ Input Layer  
-- Accepts sequential or time-series feature vectors  
-- Supports variable sequence lengths  
+The dataset includes results of standard strength tests performed on UHPFRC specimens with varying fiber volumes.
 
----
+### **Tests Conducted**
+#### **Compressive Strength**
+- Specimen: **50 × 50 × 50 mm cube**
 
-### 2️⃣ Time-Adaptive Encoding Block  
-Components:  
-- Temporal Convolution Layer  
-- Phase-Shift Learning Module  
-- Gated Activation Unit (GAU)
+#### **Split Tensile Strength**
+- Specimen: **75 × 150 mm cylinder**
 
-Key Features:  
-- Learns fine-grained temporal transitions  
-- Dynamically adapts to changing patterns  
+#### **Flexural Strength**
+- Specimen: **40 × 40 × 160 mm prism**
 
----
-
-### 3️⃣ Multi-Scale Feature Extraction Block  
-Contains:  
-- Dilated CNNs  
-- Residual Skip Connections  
-- Temporal Multi-Scale Kernels  
-
-Purpose:  
-- Captures short-term + long-term dependencies  
+### **Dataset Contains**
+- Raw experimental readings  
+- Average results for each fiber percentage  
+- Performance enhancement trend with increasing fiber volume  
 
 ---
 
-### 4️⃣ Time-Adaptive Normalization  
-- Normalization parameters vary at each time-step  
-- Improves convergence and stabilizes training  
+## 🛡️ 3. Durability Test Dataset
+
+This section contains long-term and short-term durability characteristics of UHPFRC mixes.
+
+### **Tests Included**
+- **Abrasion Test**  
+  *20 mm thick × 50 mm breadth × 50 mm diameter*
+
+- **Rapid Chloride Permeability Test (RCPT)**  
+  *100 × 50 mm specimen*
+
+- **Saturated Water Absorption**
+
+- **Porosity Test**  
+  *75 × 150 mm specimen*
+
+- **Alkalinity Test**  
+  conducted on powdered UHPFRC samples
+
+### **Dataset Contains**
+- Chloride permeability charge passed  
+- Abrasion mass loss  
+- Water absorption percentage  
+- Porosity measurements  
+- Alkalinity (pH) readings  
 
 ---
 
-### 5️⃣ Dense Reconstruction Block  
-- Several fully connected layers  
-- Final prediction or reconstruction output  
+## 🔬 4. Microstructural Analysis Dataset
+
+This section provides microstructural evidence supporting mechanical and durability results.
+
+### **Analytical Techniques**
+- **Scanning Electron Microscopy (SEM)**
+  - Fiber distribution  
+  - Crack bridging  
+  - Matrix densification  
+
+- **Energy Dispersive X-ray Analysis (EDAX/EDX)**
+  - Elemental composition  
+  - Hydration product identification  
+
+### **Dataset Contains**
+- SEM micrographs for each fiber volume  
+- EDX spectra and elemental composition tables  
 
 ---
 
-## ⚡ Activation Functions  
-- **ReLU** → feature extraction  
-- **Tanh** → gating mechanisms  
-- **Sigmoid** → adaptive control modules  
+## 📁 5. Applications of This Dataset
+
+Researchers, engineers, and data scientists can use this dataset for:
+
+- Studying how steel fiber volume influences UHPFRC **strength**, **ductility**, and **durability**  
+- Comparing sustainable UHPFRC mix designs  
+- Conducting **microstructural–mechanical correlation studies**  
+- Training ML models for predicting UHPFRC behavior  
+- Reproducing laboratory results and validating experimental procedures  
 
 ---
 
-## 🎯 Key Advantages  
-- Learns **dynamic temporal patterns**  
-- Produces **interpretability outputs** such as:  
-  - Temporal attention heatmaps  
-  - Phase-shift visualization  
-  - Adaptive weight evolution plots  
-- Robust for non-stationary signals  
+## 📄 Citation
+(Add your citation here when publishing the dataset)
 
 ---
 
-## 📊 Block Diagram (ASCII Representation)
-
+## 🪪 License
+(Choose your preferred license such as **MIT**, **Apache 2.0**, or **CC BY-4.0**)
