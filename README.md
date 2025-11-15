@@ -111,11 +111,3 @@ Researchers, engineers, and data scientists can use this dataset for:
 - Reproducing laboratory results and validating experimental procedures  
 
 ---
-
-## 📄 Citation
-(Add your citation here when publishing the dataset)
-
----
-
-## 🪪 License
-(Choose your preferred license such as **MIT**, **Apache 2.0**, or **CC BY-4.0**)
